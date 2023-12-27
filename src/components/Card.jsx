@@ -63,12 +63,16 @@ function Card({ data, cartCount, setCartCount }) {
           {/* <!-- Product actions--> */}
           <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
             <div className="text-center">
-              {toggle ? (
+              {data.isOption ? (
+                <button className="btn btn-outline-dark mt-auto">
+                  View Options
+                </button>
+              ) : toggle ? (
                 <button
                   className="btn btn-outline-dark mt-auto"
                   onClick={() => {
-                    setCartCount(cartCount+1)
-                    setToggle(false)
+                    setCartCount(cartCount + 1);
+                    setToggle(false);
                   }}
                 >
                   Add to cart
@@ -77,8 +81,8 @@ function Card({ data, cartCount, setCartCount }) {
                 <button
                   className="btn btn-outline-dark mt-auto"
                   onClick={() => {
-                    setCartCount(cartCount-1)
-                    setToggle(true)
+                    setCartCount(cartCount - 1);
+                    setToggle(true);
                   }}
                 >
                   Remove from cart

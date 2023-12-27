@@ -14,6 +14,7 @@ function App() {
             price:"$40.00 - $80.00",
             isDiscount:false,
             isRating:false,
+            isOption: true
         },
 
         {
@@ -23,6 +24,7 @@ function App() {
             discountPrice:"$18.00",
             isDiscount:true,
             isRating:true,
+            isOption: false
         },
 
         {
@@ -32,6 +34,7 @@ function App() {
             discountPrice:"$25.00",
             isDiscount:true,
             isRating:false,
+            isOption: false
         },
 
         {
@@ -40,7 +43,7 @@ function App() {
             price:"$40.00",
             isDiscount:false,
             isRating:true,
-            
+            isOption: false
         },
 
         {
@@ -50,7 +53,7 @@ function App() {
             discountPrice:"$25.00",
             isDiscount:true,
             isRating:false,
-            
+            isOption: false
         },
 
         {
@@ -58,7 +61,7 @@ function App() {
             title:"Fancy Product",
             price:"$120.00 - $280.00",
             isDiscount:false,
-            
+            isOption: true
         },
         {
             isBadge: true,
@@ -67,7 +70,7 @@ function App() {
             discountPrice:"$18.00",
             isDiscount:true,
             isRating:true,
-            
+            isOption: false
         },
         {
             isBadge: false,
@@ -75,7 +78,7 @@ function App() {
             price:"$40.00",
             isDiscount:false,
             isRating:true,
-            
+            isOption: false
         }
     ]
 
